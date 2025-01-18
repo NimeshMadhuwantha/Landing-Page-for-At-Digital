@@ -1,0 +1,65 @@
+/* Base Styles */
+.custom-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #F28D35;
+    color: #fff;
+}
+
+.custom-button:hover {
+    background-color: #eb9b54;
+    color: #e2e2e2;
+}
+
+/* Primary Variant */
+.custom-button.primary {
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Secondary Variant */
+.custom-button.secondary {
+    background-color: #ffffff;
+    color: #555;
+}
+
+/* Responsive Styles */
+
+
+@media (min-width: 1440px) {
+    .custom-button {
+        padding: 12px 25px;
+        font-size: 18px;
+    }
+}
+@media (min-width: 1200px) {
+    .custom-button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1439px) and (min-width: 768px) {
+    .custom-button {
+        padding: 11px 20px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 375px) {
+    .custom-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 374px) {
+    .custom-button {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}
