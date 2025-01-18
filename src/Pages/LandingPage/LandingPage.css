@@ -221,7 +221,7 @@
             align-items: center; 
             justify-content: center; 
             gap: 1rem;
-            text-align: center; /* Align text to center */
+            text-align: center; 
         }
         .BoxMiddleContent2 {
             display: flex;
@@ -229,7 +229,7 @@
             align-items: center; 
             justify-content: center; 
             gap: 1rem;
-            text-align: center; /* Align text to center */
+            text-align: center; 
         }
     .ButtonTop button {
         padding: 0.6rem 0.6rem;

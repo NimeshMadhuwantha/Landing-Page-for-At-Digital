@@ -26,6 +26,7 @@ const FAQSection = () => {
                     </div>
                 )}
             </div>
+            
             <div className="faq-item">
                 <div className="faq-question">
                     <p>Lorem ipsum dolor sit amet consectetur. Tortor scelerisque integer?</p>
