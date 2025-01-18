@@ -60,15 +60,7 @@
 }
 
 @media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-    }
-
-    .footer-column {
-        text-align: center;
-    }
+    
 }
 
 @media (max-width: 375px) {

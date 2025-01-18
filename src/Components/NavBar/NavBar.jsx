@@ -9,6 +9,10 @@ const NavBar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -27,6 +31,23 @@ const NavBar = () => {
           <span className="line"></span>
         </div>
       </div>
+
+      
+      {isMenuOpen && (
+  <div className={`hamburger-menu ${isMenuOpen ? 'active' : ''}`}>
+    <div className="close-icon" onClick={closeMenu}>
+      &#10005; 
+    </div>
+    <ul className="hamburger-menu-list">
+      <li><a href="/">HOME</a></li>
+      <li><a href="/">SERVICES</a></li>
+      <li><a href="/about">ABOUT US</a></li>
+      <li><a href="/services">CONTACT US</a></li>
+      <li><a href="/contact">CAREERS</a></li>
+    </ul>
+  </div>
+)}
+
     </nav>
   );
 };

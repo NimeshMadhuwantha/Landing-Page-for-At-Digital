@@ -203,6 +203,9 @@
 }
 
 @media (max-width: 376px) {
+    .background-image img{
+        margin-top: 15%;
+    }
     .TopContent h1 {
         font-size: 5vw;
     }
@@ -210,7 +213,7 @@
         width: 100%;
         height: auto;
         margin-left: 0;
-        margin-top: 65%;
+        margin-top: 63%;
         position: static;
         transform: none;
       

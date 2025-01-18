@@ -1,4 +1,4 @@
-/* Base Styles */
+
 .custom-button {
     padding: 10px 20px;
     font-size: 16px;
@@ -15,19 +15,16 @@
     color: #e2e2e2;
 }
 
-/* Primary Variant */
 .custom-button.primary {
     background-color: #ffffff;
     color: #000;
 }
 
-/* Secondary Variant */
 .custom-button.secondary {
     background-color: #ffffff;
     color: #555;
 }
 
-/* Responsive Styles */
 
 
 @media (min-width: 1440px) {
