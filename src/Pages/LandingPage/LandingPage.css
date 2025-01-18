@@ -1,13 +1,18 @@
+
+.body-landing{
+    width: 100%;
+    position: absolute;
+    top: 0PX;
+}
 .landing-page {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     top: 0;
     width: 100%;
-    height: 100vh;
+    height:auto;
     overflow: hidden;
-    background-color: #f2f2f2;
+    
 }
 
 .background-image img {
@@ -26,6 +31,7 @@
     background: linear-gradient(135deg, #4DCA79, #1CBDDD);
     position: relative;
     z-index: 1;
+    margin-top: 200PX;
 }
 .TopContent h1 {
     font-size:2.5vw;
@@ -38,67 +44,209 @@
     padding-bottom: 5%;
     margin-top: -40px;
 }
-@media (max-width: 768px) {
-    .TopContent h1 {
-        font-size: 5vw;
-    }
+.ButtonTop button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem; 
+    border-radius: 5px; 
+    transition: all 0.3s; 
 }
 
-@media (max-width: 375px) {
-    .TopContent h1 {
-        font-size: 6vw;
-    }
+.BoxMiddle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #ffffff; 
+    gap: 2rem;
+    height: auto;
+    flex-wrap: wrap; 
 }
+.BoxMiddle2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    background-color: #ffffff; 
+    gap: 2rem;
+    height: auto;
+    flex-wrap: wrap; 
+}
+
+.DesktopImage img {
+    width: 100%;
+    max-width: 500px; 
+    height: auto; 
+    border-radius: 8px;
+}
+.ImageSearch img {
+    width: 100%;
+    max-width: 400px; 
+    height: auto; 
+    border-radius: 8px;
+}
+
+.BoxMiddleContent {
+    flex: 1; 
+    text-align: left;
+}
+.BoxMiddleContent2 {
+    flex: 1; 
+    text-align: left;
+    padding-left: 5%;
+}
+
+.BoxMiddleContent h1 {
+    font-size: 2rem; 
+    color: #4F46E5; 
+    margin-bottom: 1rem;
+}
+.BoxMiddleContent2 h1 {
+    font-size: 2rem; 
+    color: #4F46E5; 
+    margin-bottom: 1rem;
+}
+
+
+.BoxMiddleContent h2 {
+    font-size: 1.2rem; 
+    line-height: 1.5; 
+    color: #000000; 
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+.BoxMiddleContent2 h2 {
+    font-size: 1.2rem; 
+    line-height: 1.5; 
+    color: #000000; 
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.BoxMiddleContent .large {
+    font-size: 1rem; 
+    padding: 10px 20px; 
+}
+.BoxMiddleContent2 .large {
+    font-size: 1rem; 
+    padding: 10px 20px; 
+}
+
+
+
 @media (max-width: 1920px) {
     .TopContent {
         width: 35%;
         height: auto;
         margin-left: -55%;
-        margin-top: 25%;       
+        margin-top: 23%;       
     }
 }
 
 @media (max-width: 1440px) {
     .TopContent {
-        margin-left: -45%;
-        margin-top: 20%;       
+        margin-left: -55%;
+        margin-top: 25%;       
     }
 }
 
 @media (max-width: 1200px) {
     .TopContent {
-        margin-left: -45%;
-        margin-top: 10%; 
+        margin-left: -55%;
+        
+    }
+    .ButtonTop button {
+        padding: 0.4rem 1rem; 
+        font-size: 0.8rem; 
     }
 }
 @media (max-width: 1024px) {
     .TopContent {
-        margin-left: -45%;
-        margin-top: 0%; 
+        margin-left: -55%;        
+    }
+    .ButtonTop button {
+        padding: 0.3rem 0.8rem; 
+        font-size: 0.6rem; 
     }
 }
-
 @media (max-width: 768px) {
+    .TopContent h1 {
+        font-size: 4.5vw;
+    }
     .TopContent {
         width: 100%;
-        height: 30%;
+        margin-top: 55%;
         margin-left: 0;
-        margin-top: 30%;
-        position: static;
         
+    }
+    .DesktopImage img {
+        max-width: 300px; 
+    }
+    .ImageSearch img {
+        max-width: 200px; 
+    }
+
+    .BoxMiddleContent h1,.BoxMiddleContent2 h1 {
+        font-size: 1.6rem; 
+    }
+
+    .BoxMiddleContent h2,.BoxMiddleContent2 h2 {
+        font-size: 0.8rem; 
+    }
+
+    .BoxMiddleContent .large,.BoxMiddleContent2 .large {
+        font-size: 0.7rem; 
+    }
+    .ButtonTop button {
+        padding: 0.7rem 1.1rem;
+        font-size: 1.3rem; 
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
+    .TopContent h1 {
+        font-size: 5vw;
+    }
     .TopContent {
         width: 100%;
         height: auto;
         margin-left: 0;
-        margin-top: 20%;
+        margin-top: 65%;
         position: static;
         transform: none;
+      
+    }
+        .BoxMiddleContent {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 1rem;
+            text-align: center; /* Align text to center */
+        }
+        .BoxMiddleContent2 {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 1rem;
+            text-align: center; /* Align text to center */
+        }
+    .ButtonTop button {
+        padding: 0.6rem 0.6rem;
+        font-size: 0.7rem; 
+    }
+    
+     .ButtonTop{
+        padding-top: 7%;
+        padding-left: 5%;
+        padding-bottom: 5%;
+        margin-top: -40px;
+    }
+    .ImageSearch img{
+        margin-left: 25%;
     }
 }
+
 
 
 

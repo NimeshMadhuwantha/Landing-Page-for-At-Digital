@@ -1,10 +1,10 @@
 .navbar {
     background-color: #4F46E5;
     padding: 1rem 0;
-    position: absolute; 
-    top: 0; 
+    position: fixed;
+    top: 0;
     z-index: 1000;
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -15,17 +15,20 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 1rem;
+    position: relative;
 }
 
 .navbar-logo img {
-    height: 40px;
-    margin-left: 10%;
+    height: 40px; /* Default logo size */
+    margin-left: 2rem;
+    transition: all 0.3s;
 }
 
 .navbar-links {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    margin-right: 2rem;
 }
 
 .navbar-links li {
@@ -46,6 +49,7 @@
     border-radius: 5px;
 }
 
+/* Hamburger Icon */
 .menu-icon {
     display: none;
     flex-direction: column;
@@ -53,6 +57,7 @@
     width: 25px;
     height: 20px;
     cursor: pointer;
+    z-index: 1100;
 }
 
 .menu-icon .line {
@@ -63,22 +68,58 @@
     transition: all 0.3s;
 }
 
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 1050;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.hamburger-menu.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.hamburger-menu .close-icon {
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: 24px;
+    color: #4F46E5;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hamburger-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.hamburger-menu ul li {
+    margin-bottom: 1rem;
+}
+
+.hamburger-menu ul a {
+    color: #4F46E5;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Responsive Styling */
 @media screen and (max-width: 768px) {
     .navbar-links {
-        display: none;
-        flex-direction: column;
-        background-color: #4F46E5;
-        position: absolute;
-        top: 70px;
-        right: 1rem;
-        width: 200px;
-        border-radius: 5px;
-        padding: 1rem;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .navbar-links.active {
-        display: flex;
+        display: none; /* Hide the list on small screens */
     }
 
     .menu-icon {
@@ -87,21 +128,24 @@
 }
 
 @media screen and (max-width: 375px) {
-    .navbar-links a {
-        font-size: 14px;
-        padding: 0.5rem 0.75rem;
-    }
-
     .navbar-logo img {
-        height: 30px;
+        height: 20px;
+        margin-left: 0.5rem;
     }
 
     .menu-icon {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
         width: 20px;
         height: 15px;
     }
 
     .menu-icon .line {
         height: 2px;
+    }
+
+    .hamburger-menu ul a {
+        font-size: 16px;
     }
 }
