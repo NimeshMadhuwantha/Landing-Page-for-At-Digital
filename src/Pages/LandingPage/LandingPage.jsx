@@ -4,10 +4,12 @@ import HomePageImage from '../../assets/HomePageImage.jpg';
 import Button from '../../Components/button/Button';
 import ImageDesktop from '../../assets/ImageDesktop.png';
 import ImageSearch from '../../assets/ImageSearch.png';
+import Question from '../../Components/Question/Question';
 
 const LandingPage = () => {
     const handleButtonClick = () => {
         alert('Welcome to the Home Page!');
+
     };
     return (
        <div className='body-landing'>
@@ -60,6 +62,9 @@ const LandingPage = () => {
                     <img src={ImageSearch} alt="" />
                 </div>
             </div>
+
+            <Question/>
+
             </div>
     );
 };
